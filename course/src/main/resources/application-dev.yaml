@@ -5,7 +5,13 @@ spring:
     username: sa
     password:
 
+  h2:
+    console:
+      enabled: true
+
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
+    show-sql: true
+
